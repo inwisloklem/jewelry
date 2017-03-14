@@ -1,0 +1,38 @@
+.photos
+  padding-top: 30px
+  background-color: $linen
+  overflow: hidden
+
+  @media $tablet-desktop
+    padding-top: 0
+    padding-bottom: 40px
+  
+  @media $tablet
+    transform: rotate(3deg)
+
+  @media $desktop
+    transform: rotate(4deg)
+    
+  @media $wide-desktop-1
+    transform: rotate(3deg)
+
+  @media $wide-desktop-2
+    transform: rotate(2deg)
+
+  &__list
+    display: flex
+    flex-direction: row
+    flex-wrap: wrap
+    justify-content: center
+    list-style-type: none
+    
+  &__item
+    flex-basis: 100%
+    border-bottom: 5px solid $linen
+    font-size: 0
+
+    @media $tablet-desktop
+      flex-basis: 33%
+
+    img
+      max-width: 100%

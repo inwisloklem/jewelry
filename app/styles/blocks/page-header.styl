@@ -1,0 +1,55 @@
+.page-header
+  padding: 20px 0
+  background-color: $linen
+  background-image: linear-gradient(to bottom, $linen, $soft-peach)
+
+  @media $tablet-desktop
+    background-image: url("../img/background-top.jpg")
+    background-size: cover
+    background-position: center top
+    background-repeat: no-repeat
+    
+  @media $desktop
+    background-image: url("../img/image-gift.png"), url("../img/background-top.jpg")
+    background-size: auto, cover
+    background-position: calc(50% - 250px) 300px, center top
+    background-repeat: no-repeat
+
+  &__logo
+    margin-top: 10px
+    margin-bottom: 10px
+
+  &__hero
+    margin-bottom: 20px
+    color: $black-rose
+    font(2.5em, 1.2, 500)
+  
+  &__accent
+    text-transform: uppercase
+
+  &__wrapper
+    margin: auto
+    max-width: 540px
+    display: flex
+    flex-direction: column
+    align-items: center
+
+    @media $desktop
+      margin: 0
+      margin-left: auto
+      margin-right: 50px
+
+  &__title
+    margin-bottom: 20px
+    color: $black-rose
+    font(1.625em, 1.5, 500)
+
+  &__regform
+    margin-bottom: 20px
+
+  &__text
+    font(1.375em, 1.5, 200)
+    
+  &__note
+    color: $squirrel
+    font(1em, 1.5, 200)

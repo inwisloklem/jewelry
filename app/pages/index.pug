@@ -1,0 +1,84 @@
+doctype html
+
+html(lang = "ru")
+  include parts/head.pug
+
+  body
+    header.page-header
+      .container
+        .page-header__logo
+          img(src = "img/logo.png", width = 257, height = 122)
+
+        h2.page-header__hero
+          | Уникальная акция в одном из красивейших магазинов
+          | легендарной сети, на станции метро Аэропорт
+
+        .page-header__wrapper
+          p.page-header__text
+            | Только сейчас! Каждому пришедшему #[br] в наш фирменный магазин
+          h3.page-header__title
+            span.page-header__accent бесплатная консультация стилиста
+            br
+            | + секретный #[span.page-header__accent драгоценный подарок!]
+
+          .regform.page-header__regform
+            form.regform__form(action = "#", method = "post")
+              input.regform__name(type = "text", name = "name", placeholder = "Введите ваше имя")
+              input.regform__tel(type = "tel", name = "phone", placeholder = "Введите номер телефона")
+
+              button.btn.regform__btn(type = "submit") Оставить заявку
+
+          p.page-header__note * Для получения подарка необходимо оставить заявку
+
+    main
+      section.info
+        .container.container--vert
+          .info__hgroup
+            h2.info__title Новое в мире ювелирных украшений! 
+            h2.info__title Только в МЮЗ консультация стилиста совершенно бесплатно!
+
+          p.info__text
+            | Вы узнаете, какие украшения подходят именно вам, с чем их носить,
+            | по какому случаю, сможете примерить понравившиеся изделия и познакомиться
+            | с ассортиментом легендарной ювелирной сети!
+
+          p.info__text
+            | Почувствуйте себя королевой — примерьте любое шикарное украшение на себя! 
+
+          h3.info__note А ещё — получите секретный #[span.info__accent драгоценный подарок!]
+
+      section.photos
+        .container
+          ul.photos__list
+            li.photos__item
+              img(src = "../img/pic1.jpg")
+            li.photos__item
+              img(src = "../img/pic2.jpg")
+            li.photos__item
+              img(src = "../img/pic3.jpg")
+
+    footer.page-footer
+      .container
+        .page-footer__hgroup
+          h2.page-footer__title
+            | Оставь заявку прямо сейчас и&nbsp;получи консультацию стилиста
+          h2.page-footer__title
+            | + секретный #[span.page-footer__accent драгоценный подарок!]
+
+        .page-footer__wrapper
+          .regform.page-footer__regform
+            form.regform__form(action = "#", method = "post")
+              input.regform__name(type = "text", name = "name", placeholder = "Введите ваше имя")
+              input.regform__tel(type = "tel", name = "phone", placeholder = "Введите номер телефона")
+
+              button.btn.regform__btn(type = "submit") Оставить заявку
+
+        p.page-footer__note * Для получения подарка необходимо оставить заявку
+
+        hr.page-footer__hr
+
+        section.copyright
+          p.copyright__ph Copyright © 2017
+          p.copyright__ph Московский ювелирный завод
+          p.copyright__ph ОАО «МЮЗ» ИНН 7724181241 КПП 774850001 ОГРН 1027700201902 115533 
+          p.copyright__ph Москва, Нагатинская ул., дом 5

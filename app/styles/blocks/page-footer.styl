@@ -1,0 +1,44 @@
+.page-footer
+  padding: 20px 0
+  background-color: $linen
+  background-image: linear-gradient(to bottom, $linen, $soft-peach)
+  
+  @media $tablet-desktop
+    background-image: url("../img/background-bottom.jpg")
+    background-size: cover
+    background-position: bottom center
+    background-repeat: no-repeat
+
+  &__wrapper
+    display: flex
+    flex-direction: column
+    align-items: center
+
+  &__title
+    margin: auto
+    max-width: 600px
+    font(1.625em, 1.5, 500, uppercase)
+    
+    &:last-of-type
+      text-transform: none
+    
+  &__accent
+    color: $shiraz
+    text-transform: uppercase
+
+  &__hgroup
+    margin-bottom: 20px
+
+  &__note
+    color: $squirrel
+    font(1em, 1.5, 200)
+
+  &__regform
+    margin-bottom: 20px
+    
+  &__hr
+    margin-top: 20px
+    height: 4px
+    width: 100%
+    border: none
+    background-color: $tan

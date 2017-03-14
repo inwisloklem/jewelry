@@ -1,0 +1,46 @@
+.info
+  color: $white
+  background-color: $shiraz
+  background-image: linear-gradient(to bottom, $shiraz, $venetian-red)
+  
+  @media $tablet-desktop
+    background-image: url("../img/background-center.jpg")
+    background-size: cover
+    background-position: top center
+    background-repeat: no-repeat
+
+  &::before
+  &::after
+    display: block
+    content: ""
+
+  &::before
+    border-top: 42px solid $soft-peach
+    border-left: 100vw solid transparent
+
+    @media $desktop
+      border-top-width: 84px
+
+  &::after
+    border-bottom: 42px solid $linen
+    border-right: 100vw solid transparent
+
+    @media $desktop
+      border-bottom-width: 84px
+
+  &__title
+    margin-bottom: 20px
+    font(1.625em, 1.5, 500)
+    
+  &__text
+    margin: auto
+    margin-bottom: 20px
+    max-width: 780px
+    font(1.25em, 1.5, 200)
+    
+  &__note
+    font(1.75em, 1.5, 400)
+    
+  &__accent
+    color: lighten($tan, 35%)
+    text-transform: uppercase
